@@ -1,0 +1,623 @@
+@charset "utf-8";
+ 
+/*
+* CSS-Design
+* HGE Architekten/Monatsaufgabe 08/Responsive/Lisa Schröder
+* Online-Schule für Gestaltung: Webdesign-Kurs
+*/
+ 
+ 
+ 
+/* Reset und Voreinstellungen* * * * * * * * */
+
+
+*{
+    margin: 0;
+    padding: 0; 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{   
+    font-size: 100%; /* Browserstandard: 16px/1rem */
+    position: relative; 
+    min-height: 100%; 
+}
+
+
+img{
+    max-width: 100%;
+}
+
+ 
+body{
+        font-size: 1.1rem;
+        font-family: 'Noto Sans', Helvetica, 'sans-serif';
+        line-height: 1.6;
+        color: white;
+}
+
+
+
+/* Spalten und Reihen * * * * * * * * */
+
+
+
+ .column {
+float: left;
+padding: 10px;
+margin: 0px 0 0px 2%;
+position: relative;
+}
+
+
+.row{
+    width: 100%;
+    float: left;
+    margin: 5% 0;
+  
+}
+
+.row-no-margin{
+    width:100%; 
+    float:left;
+}
+
+ .column:first-child {
+margin-left: 0;
+}
+
+
+
+.full { width: 100%; }
+.half { width: 49%; }
+.third { width: 32%; }
+.two-thirds { width: 66%; }
+.fourth { width: 23.5%; }
+.three-fourth {width:74.5%;}
+.fifth{width:20%; margin: 0; padding: 1px;}
+
+ 
+#footer .column {
+    margin: 0;
+}
+ 
+
+
+
+/* Layout * * * * * * * * */
+ 
+
+.wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+}
+
+
+ 
+
+#content{
+        padding: 5% 0;
+}
+
+#content .button{
+        margin: 5% 0;
+    }
+
+ 
+#footer{
+        background-color: rgba(0,0,0,0.5);
+        padding: 22px 10px;
+        text-align: left;
+    
+       
+        color: white;
+        font-size: 0.9rem;
+        line-height: 1.8;
+
+}
+
+.float-right{
+        float: right;
+        text-align: right;
+}
+ 
+ 
+ 
+/* Navigation */
+
+
+#Hauptnavigation{
+        background-color: rgba(0,0,0,0.5);
+        padding: 22px 10px;
+        margin-bottom: 5%;  
+
+}
+ 
+ul#navigation{
+        float: right;
+        margin: 20px 10px 0 0;
+}
+ 
+ul#navigation li{
+        display: inline;
+        margin: 0 0 0 40px;
+        list-style: none;
+}
+ 
+ul#navigation li a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+ 
+ul#navigation li a:hover, .active{
+        color: #99c102 ! Important;
+}
+ 
+
+
+/* Navigation mobil */
+
+
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+  position: relative;
+  display:none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  font-size: 2.5rem;
+  height: 100%;
+
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  
+  color: #99c102;
+}
+
+
+
+
+ /* Typografie */
+ 
+h1, h2, h3, h4, h5, h6 {
+        font-family: 'Noto Serif', serif;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+}
+ 
+h2{
+        font-size: 1.5em;
+        line-height: 34px;
+}
+ 
+
+p{
+        margin-bottom: 12px;
+}
+
+ .blacktext{
+        color: black;   
+ }
+
+ .greentext{
+        color:#99c102;
+ }
+
+
+
+/* Links */
+
+a{
+        color: #99c102;
+        text-decoration: none;
+}
+ 
+a:hover{
+        color: white;
+}
+ 
+
+
+
+ /* Buttons */
+
+ 
+.button{
+        background: #99c102;
+        padding: 8px 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        border-radius: 4px;
+        font-family: 'Noto serif', serif;
+        display:inline-block;
+     
+
+}
+ 
+.button:hover{
+        background: white;
+        color: #99c102;
+        text-shadow: none;
+}
+
+.button-center{
+        background-color: rgba(153,193,2,0.9);
+        padding: 10px 20px;
+        color: white;
+        font-size: 1.25rem;
+        font-family: 'Noto serif', serif;
+        border-radius: 4px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+}
+ 
+.button-center:hover{
+        background: white;
+        color: #99c102;
+}
+
+
+
+/* Bilder */
+
+
+
+#content img{
+        border-radius: 4px;
+        width: 100%;
+}
+ 
+
+
+
+
+/* Layout Index * * * * * * * * */
+ 
+
+
+#background-top{
+       
+        background-image: url(images/teaser.jpg);
+        background-size: cover;   
+        padding: 0 0 5% 0;
+}
+ 
+
+
+#background-top h1{
+        text-align: center;
+}
+
+#background-top p{
+        text-align: center;
+    }
+
+
+#background-bottom{
+        
+        background-image: url(images/teaser-kontakt.jpg);
+        background-size: cover;
+        position: relative;
+       
+}
+
+#background-bottom h2{
+        text-align: center; 
+        margin: 5% 0 3% 0;
+}
+
+#background-bottom .full{
+        text-align: center;
+}
+
+/* Unterseite Ueber */
+
+
+
+#ueber-background-top{
+        
+        
+        background-image: url(images/teaser-about.jpg);
+        background-size: cover;  
+        padding: 0 0 5% 0;
+
+}
+
+#ueber-background-top p{
+        float: left; 
+        text-align: justify;
+    }
+
+#ueber-background-top nav{
+    margin-bottom: 8%;
+}
+
+#ueber-content{
+    padding: 5% 0;
+}
+
+#ueber-background-bottom{
+    
+        background-image: url(images/teaser-about-unten.jpg);
+        background-size: cover;
+        position: relative;
+        text-align: center;
+       
+}
+
+#ueber-background-bottom h2,.button{
+        text-align: center; 
+        margin: 5% 0 3% 0;
+    }
+
+
+/* Unterseite Kontakt */
+
+#background-kontakt{
+       
+        background-image: url(images/background-kontakt.jpg);
+        background-size: cover;
+       
+
+}
+
+#background-kontakt footer{
+    margin-top: 6%;
+}
+
+#background-kontakt nav{
+    margin-bottom: 6%;
+}
+
+
+
+
+/* Unterseite Leistungen */
+
+#leistungen-background-top{
+        
+        background-image: url(images/leistungen-background.jpg);
+        background-size: cover; 
+        position: relative; 
+        padding: 0 0 5% 0;
+
+}
+
+
+#leistungen-background-top .third {
+        text-align: left;}
+
+#leistungen-background-top h1{
+        font-size: 2rem;
+        margin-bottom: 5%;
+        text-align: center;}
+
+#leistungen-background-top p{
+       
+        text-align: center;}
+
+#leistungen-background-top h2{font-size:1.25rem;
+        margin-bottom: 30px;
+        background: rgba(153,193,2,0.7);
+        padding: 10px;
+        text-align: center;
+}
+
+#leistungen-background-top .column li {
+    font-size: 1.1rem;
+        margin-left: 25px;
+        margin-bottom: 20px;
+        line-height: 2;
+}
+
+
+#leistungen-background-bottom{
+
+        background-image: url(images/leistungen-unten.jpg);
+        background-size: cover;
+        position: relative;
+        text-align: center;
+    }
+
+#leistungen-background-bottom h2{ margin: 5% 0 3% 0;}
+
+   
+
+#content-leistungen{
+        background: white;
+        padding: 120px 0px 100px 0px;
+        color: black;
+   
+}
+
+#content-leistungen h3{
+        font-weight: bold;
+        margin-bottom: 5%;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+}
+
+#content-leistungen li {
+        margin-left: 25px;
+        margin-bottom: 25px;
+     
+        line-height: 2;
+}
+
+
+
+/* Galerie/Projekte */
+
+
+#background-projekte{
+    
+        background-image: url(images/leistungen-background.jpg);
+        background-size: cover;   
+      
+
+}
+
+#text-projekte {
+        text-align: center; margin-bottom: 10%;
+}
+
+
+
+
+#gallery {
+        width: 100%;
+}
+
+#gallery p{
+        text-align: center; 
+        background: #99c102;
+}
+
+
+#background-projekte footer{
+        margin-top: 5%;
+}
+
+
+
+
+
+/* Datenschutzerklaerung und Impressum*/
+
+#impressum{
+        color:black;
+        padding-bottom: 100px;
+}
+
+#impressum h2{
+        text-align: center;
+}
+
+#datenschutz{
+        color: black;
+        margin-bottom: 5%;
+}
+
+#datenschutz h2{
+        text-align: center;
+        margin-bottom: 5%;
+}
+
+#impressum h3 {margin: 20px 0 10px 0;}
+
+
+
+/* Mediaqueries */
+
+
+@media only screen and (min-width: 760px) and (max-width: 979px) {
+
+
+
+.wrapper{
+    width: 760px;
+}
+
+.full 
+ 
+}
+
+
+@media only screen and (max-width: 759px) {
+
+
+ul#navigation li{
+        display: inline;
+        margin:  20px;
+        list-style: none;
+        text-align: center;
+}
+
+#footer{
+        background-color: rgba(0,0,0,0.5);
+        padding: 22px 10px;
+       text-align: left;
+        left: 0px;
+        right: 0px;
+        color: white;
+        font-size: 1rem;
+        line-height: 2;
+
+}
+
+#footer .float-right {
+    float:left; 
+    text-align: left;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+.full, .two-thirds, .half, .third, .fourth, .three-fourth, #main, .sidebar{
+    width: 96%;
+    margin: 10px 2% !important;
+}
+
+.fifth{
+    width: 50%; 
+    margin: 0, padding:0;
+}
+
+#Hauptnavigation{
+    display:none;
+}
+
+.topnav{
+    display: block;
+}
+
+#ueber-content .fourth {
+    width:46%;
+}
+
+}
+
+
+
+
+
+/*Cookie Consent Begin*/
+
+
+
